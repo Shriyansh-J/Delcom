@@ -11,6 +11,12 @@
     display: block;
   }
 }
+.sponsi-corpo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 768px) {
   .header-area {
     margin-top: 12rem !important;
