@@ -20,6 +20,9 @@
   font-size: 35px;
   font-weight: bold;
 }
+.manage-height{
+  height: 490px;
+}
       .light{
         background-color: rgba(28, 28, 124, 0.842);
         color: white;
@@ -28,6 +31,7 @@
         padding: 10px 20px;
         margin: 10px;
       }
+    
       .main{
         display: flex;
         justify-content: center;
@@ -52,9 +56,14 @@
       var index=1;
       function chgimg(x)
       {
-      i1.src=`guest-${index}.png`;
-      
-      index++;
+        if(index===9){
+          var ele=document.getElementById("i1");
+          console.log(ele)
+          ele.classList.add("manage-height");
+          console.log(ele)
+        }
+        i1.src=`guest-${index}.png`;
+        index++;
       }
       $(document).ready(function() {
 
@@ -74,16 +83,20 @@ $("body").sparkle({
         <h1 style="color: white;">Delcon 2022 LAMP LIGHTING CEREMONY</h1>
         <div class="main " style="text-align: center;margin: 0 22%;">
         
-   <div class="left-btn "> <input type="button" value=" Prof. Prerna Gaur" class="light" onclick="chgimg('guest-1.png')" />
-    <input type="button" value="Prof. Rachana Garg" class="light" onclick="chgimg('guest-2.png')" />
-    <input type="button" value="Prof. Bhim Singh" class="light" onclick="chgimg('guest-3.png')" />
-    <input type="button" value="Prof. D K Jain" class="light" onclick="chgimg('guest-4.png')" /></div>
+   <div class="left-btn "> 
+     <input type="button" value="Prof. Saifur Rahman" class="light" onclick="chgimg('guest-1.png')" />
+     <input type="button" value=" Prof. Prerna Gaur" class="light" onclick="chgimg('guest-2.png')" />
+    <input type="button" value="Prof. Rachana Garg" class="light" onclick="chgimg('guest-3.png')" />
+    <input type="button" value="Prof. Bhim Singh" class="light" onclick="chgimg('guest-4.png')" />
+    <input type="button" value="Prof. D K Jain" class="light" onclick="chgimg('guest-5.png')" /></div>
   
-      <img id="i1" src="lamp-1.png"  />
+      <img id="i1" src="lamp-1.png"/>
       <!-- <b style="color: white;">CLICK THE BUTTON TO LIGHT THE KUTHUVILAKKU</b><br><br> -->
-    <div class="right-btn ">   <input type="button" value="Dr. Ashu Verma" class="light" onclick="chgimg('guest-5.png')" />
-      <input type="button" value="Prof. Subrata Mukhopadhyay" class="light" onclick="chgimg('guest-6.png')" />
-      <input type="button" value="Dr. Shruti Jain" class="light" onclick="chgimg('guest-7.png')" />
+    <div class="right-btn ">   <input type="button" value="Dr. Ashu Verma" class="light" onclick="chgimg('guest-6.png')" />
+      <input type="button" value="Prof. Subrata Mukhopadhyay" class="light" onclick="chgimg('guest-7.png')" />
+      <input type="button" value="Dr. Shruti Jain" class="light" onclick="chgimg('guest-8.png')" />
+      <input type="button" value="Prof. J. P. Saini" class="light" onclick="chgimg('guest-9.png')" />
+      
       </div>
     </div>
     
