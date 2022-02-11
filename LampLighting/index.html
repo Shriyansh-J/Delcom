@@ -85,12 +85,18 @@
         i1.src=`guest-${index}.png`;
         index++;
         if(index===10){
-          index=1;
+          index=9;
+          $("img").sparkle({
+              count:600,
+              color: ["#DAA520","#FFD700"],
+              speed: 1
+
+          });
         }
       }
       $(document).ready(function() {
 
-$("body").sparkle({
+$("html").sparkle({
     count:600,
     color: ["#DAA520","#FFD700"],
     speed: 0.4
@@ -114,7 +120,8 @@ $("body").sparkle({
           <img src="../assets/images/corposponsi2.jpg" width="250px" alt="" class="lampimgs">
         </div>
         <br>
-        <h1 style="color: white;">Delcon 2022 LAMP LIGHTING CEREMONY</h1>
+        <h1 style="color: white;">Maiden Edition of IEEE Delhi Section International Conference Delcon2022</h1>
+        <center><h2 style="color: white;">LAMP LIGHTING CEREMONY!</h2></center>
         <div class="main " style="text-align: center;margin: 0 22%;">
         
    <div class="left-btn "> 
